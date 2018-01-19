@@ -7,6 +7,8 @@ import { Keg } from './keg.model';
     <div class="container">
       <h1>Tap Room</h1>
       <keg-list [childKegList]="masterKegList" (clickSender)="editKeg($event)"></keg-list>
+      <hr>
+      <edit-keg [childSelectedKeg]="selectedKeg" (doneButtonClickedSender)="finishedEditing()"></edit-keg>
     </div>
   `
 })
