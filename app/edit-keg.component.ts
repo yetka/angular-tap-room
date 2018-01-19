@@ -7,8 +7,8 @@ import { Keg } from './keg.model';
     <div *ngIf="childSelectedKeg">
       <h3>Details: {{childSelectedKeg.name}}</h3>
       <h4>Brand name: {{childSelectedKeg.brand}}</h4>
-      <h4>Price: {{childSelectedKeg.price}} $/pint</h4>
-      <h4>Alcohol Content: {{childSelectedKeg.alcoholContent}} %</h4>
+      <h4>Price: $ {{childSelectedKeg.price}}/pint</h4>
+      <h4>Alcohol Content: {{childSelectedKeg.alcoholContent}}%</h4>
       <hr>
       <h3>Edit Keg:</h3>
       <label>Enter Keg Name:</label>
